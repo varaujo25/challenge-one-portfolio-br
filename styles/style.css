@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #f5f5f5;
+}
+header {
+  display: block;
+}
+nav a {
+  display: block; /* ou inline, dependendo do seu layout */
+}
+.teste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+
+  align-items: center;
+}
+.teste > nav {
+  display: flex;
+  gap: 32px;
+  padding: 0% 7% 0% 0%;
+}
+.container-logo {
+  padding: 0% 0% 0% 7%;
+}
+.logo1 {
+  height: 38px;
+  width: 120px;
+}
+
+.container-apresentacao {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding: 2% 4% 2% 4%;
+  gap: 17px;
+}
+.nav-apresentacao {
+  display: flex;
+  gap: 32px;
+}
+.eu {
+  height: 368px;
+  width: 368px;
+  border-radius: 100%;
+}
+
+.teste2 {
+  width: 286px;
+}
+.conteudo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+  padding: 0% 0% 0% 4%;
+}
+.container-sobre-mim {
+  background-color: #eaf2fd;
+  padding: 0% 4%;
+}
+.sobre-mim {
+  width: 50%;
+  padding: 4%;
+}
+
+.container-skills {
+  background-color: #f5f5f5;
+}
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.skills {
+  display: grid;
+  grid-template-areas: "area1 area1 area1 area1 area1 area1";
+  padding: 0% 8%;
+  gap: 16px;
+}
+.skills-numero {
+  width: 176px;
+  height: 174px;
+  align-content: flex-end;
+  padding: 0% 0% 4% 4%;
+  background-color: #eaf2fd;
+  gap: 10px;
+  transform: rotate(-10deg);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.skills-numero:hover {
+  transition: 0.5 ease-in-out;
+  transform: translateY(-25px);
+  border: 2px solid cornflowerblue;
+}
+#logo-skills {
+  height: 24px;
+  width: 24px;
+}
+
+.container-hobbies {
+  background-color: #f5f5f5;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-areas: "area1 area1 area1 area1 area1 area1";
+  padding: 0% 8%;
+  gap: 16px;
+}
+.hobbies-numero {
+  width: 176px;
+  height: 174px;
+  align-content: flex-end;
+  padding: 0% 0% 4% 4%;
+  background-color: #eaf2fd;
+  gap: 10px;
+  transform: rotate(10deg);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.hobbies-numero:hover {
+  transition: 0.5 ease-in-out;
+  transform: translateY(-25px);
+  border: 2px solid cornflowerblue;
+}
+.container-titulo1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.container-formação-acadêmica {
+  background-color: #eaf2fd;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.formacao {
+  display: grid;
+  grid-template-areas: "area1 area1 area1";
+  padding: 0% 8%;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  height: 300px;
+  width: 300px;
+}
+
+.card:hover {
+  height: 400px;
+}
+
+.card .img-box {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  top: 0px;
+  transition: 0.5s;
+}
+.card:hover .img-box {
+  top: -100px;
+  scale: 0.75;
+}
+.card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  padding: 0px 30px;
+  text-align: center;
+  height: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  top: 130px;
+  height: 300px;
+}
+.card .read-more {
+  background: linear-gradient(90deg, #3730a3, #2a7ae4);
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+.container-experiencia-profissional {
+  color: black;
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 8%;
+  gap: 64px;
+}
+.projeto-1 {
+  display: flex;
+  gap: 26px;
+}
+.projeto-2 {
+  display: flex;
+  gap: 26px;
+}
+.projeto-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.teste3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.botoes {
+  display: flex;
+  gap: 20px;
+  padding-top: 4%;
+}
+.botao2 {
+  background-color: #2a7ae4;
+  color: white;
+  width: 116px;
+  height: 51px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.botao2:hover {
+  border: 1px solid #2a7ae4;
+  background-color: white;
+}
+
+.botao1 {
+  border: 1px solid #2a7ae4;
+  background-color: white;
+  color: #2a7ae4;
+  width: 116px;
+  height: 51px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.botao1:hover {
+  background-color: #2a7ae4;
+  color: white;
+}
+.imagem-projeto {
+  width: 752px;
+  height: 406px;
+  border: 1px solid black;
+}
+.container-contato {
+  display: flex;
+  padding: 8% 10% 8% 8%;
+  gap: 16px;
+  box-sizing: border-box;
+  background-color: #eaf2fd;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+.imagem-contato {
+  width: 464px;
+  height: 593px;
+}
+/*A porra do formulario mais louco que ja fiz*/
+
+form {
+  width: 100%;
+  max-width: 350px;
+}
+
+div.single-input {
+  width: 100%;
+  margin: 30px 0px;
+  position: relative;
+}
+
+div.single-input label {
+  font-size: 16px;
+  left: 0px;
+  bottom: 5px;
+  position: absolute;
+  color: rgb(150, 150, 150);
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+
+div.single-input input {
+  width: 450px;
+  padding: 5px;
+  color: rgb(150, 150, 150);
+  border: 0px;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  outline: 0px;
+  font-size: 16px;
+}
+
+div.single-input input:focus,
+div.single-input input:valid {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+div.single-input input:focus ~ label,
+div.single-input input:valid ~ label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  color: cornflowerblue;
+}
+
+/*A porra do formulario mais louco que ja fiz - Part - textarea*/
+div.single-input2 {
+  width: 100%;
+  margin: 30px 0px;
+  position: relative;
+}
+
+div.single-input2 textarea {
+  width: 450px;
+  padding: 5px;
+  color: rgb(150, 150, 150);
+  border: 0px;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  outline: 0px;
+  font-size: 16px;
+  resize: none;
+}
+
+div.single-input2 textarea:focus,
+div.single-input2 textarea:valid {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+div.single-input2 textarea:focus ~ label,
+div.single-input2 textarea:valid ~ label {
+  transform: translateY(-27px);
+  font-size: 12px;
+  color: cornflowerblue;
+}
+
+div.single-input2 label {
+  font-size: 16px;
+  left: 0px;
+  bottom: 180px;
+  position: absolute;
+  color: rgb(150, 150, 150);
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Animação de Loading*/
+.c-loader {
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 90px;
+  width: 90px;
+}
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav a {
+    display: none;
+  }
+
+  nav a.contato-link {
+    display: block; /* ou inline, dependendo do seu layout */
+  }
+  .sobre-mim {
+    width: 100%;
+    padding: 4%;
+  }
+  .skills {
+    display: grid;
+    grid-template-areas:
+      "area1 area1 area1"
+      "area1 area1 area1";
+    padding: 0% 8%;
+    gap: 16px;
+  }
+  .hobbies {
+    display: grid;
+    grid-template-areas:
+      "area1 area1 area1"
+      "area1 area1 area1";
+    padding: 0% 8%;
+    gap: 16px;
+  }
+  .container-formação-acadêmica {
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+  }
+  .formacao {
+    display: grid;
+    grid-template-areas: "area1 area1 area1";
+    padding: 0% 14% 0% 8%;
+    gap: 16px;
+  }
+  .imagem-formacao {
+    width: 187px;
+    height: 118px;
+    border: 1px solid black;
+  }
+  .projetos {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 8%;
+    gap: 64px;
+  }
+  .imagem-projeto {
+    width: 600px;
+    height: 406px;
+    border: 1px solid black;
+  }
+  .projeto-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .projeto-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 26px;
+  }
+  .imagem-contato {
+    display: none;
+  }
+
+  .eu {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .container-apresentacao {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 17px;
+    align-items: start;
+  }
+  .container-imagem {
+    padding-left: 5%;
+  }
+  .eu {
+    height: 100px;
+    width: 100px;
+  }
+  .conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+  .skills {
+    display: grid;
+    grid-template-areas:
+      "area1 area1"
+      "area1 area1"
+      "area1 area1";
+    padding: 0% 8%;
+    gap: 16px;
+  }
+
+  .hobbies {
+    display: grid;
+    grid-template-areas:
+      "area1 area1"
+      "area1 area1"
+      "area1 area1";
+    padding: 0% 8%;
+    gap: 16px;
+  }
+  .formacao {
+    display: grid;
+    grid-template-areas:
+      "area1"
+      "area1"
+      "area1";
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+  .imagem-formacao {
+    width: 100%;
+    height: 118px;
+    border: 1px solid black;
+  }
+  .container-titulo1 {
+    padding-bottom: 50px;
+  }
+  .projetos {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 8%;
+    gap: 64px;
+  }
+  .imagem-projeto {
+    width: 100%;
+    height: 306px;
+    border: 1px solid black;
+  }
+  .projeto-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .projeto-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 26px;
+  }
+  .imagem-contato {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  div.single-input {
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+  }
+
+  div.single-input label {
+    font-size: 16px;
+    left: 0px;
+    bottom: 5px;
+    position: absolute;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+  }
+
+  div.single-input input {
+    width: 200px;
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    border: 0px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0px;
+    font-size: 16px;
+  }
+
+  div.single-input input:focus,
+  div.single-input input:valid {
+    border-bottom: 2px solid cornflowerblue;
+  }
+
+  div.single-input input:focus ~ label,
+  div.single-input input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: cornflowerblue;
+  }
+
+  /*A porra do formulario mais louco que ja fiz - Part - textarea*/
+  div.single-input2 {
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+  }
+
+  div.single-input2 textarea {
+    width: 200px;
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    border: 0px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0px;
+    font-size: 16px;
+    resize: none;
+  }
+
+  div.single-input2 textarea:focus,
+  div.single-input2 textarea:valid {
+    border-bottom: 2px solid cornflowerblue;
+  }
+
+  div.single-input2 textarea:focus ~ label,
+  div.single-input2 textarea:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 12px;
+    color: cornflowerblue;
+  }
+
+  div.single-input2 label {
+    font-size: 16px;
+    left: 0px;
+    bottom: 180px;
+    position: absolute;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+  }
+}
