@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Challenge ONE | Front End - Portfólio
 ---
 
@@ -24,3 +25,10 @@
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/168888313-d031e9e1-1449-4b73-bd3c-3102223097f3.png">
 </p>
 
+=======
+#Pretalab
+# Pretalab
+Portfolio
+# Projeto_Final_Javascript_3
+>>>>>>> e760085384a006da492bb3e58fb52a7b7bf83186
+# Challenge-One-Port
